@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продажа Автомобиля</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #320e32;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: black;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .telegram-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0088cc;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .telegram-button:hover {
+            background-color: #006699;
+        }
+
+        .car-details, .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .car-details img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .car-details h2 {
+            margin-top: 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: calc(33.333% - 10px);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form h2 {
+            margin-top: 0;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="https://t.me/eresjf" class="telegram-button" target="_blank">Связаться в Telegram</a>
+    
+    <div class="header">
+        <h1>Продажа Автомобиля</h1>
+    </div>
+
+    <div class="car-details">
+        <h2>Mazda CX-7</h2>
+        <p>Купсула времени к которой нужно не много преложить руки. Два с половиной года машина стояла и ждала своего часа, и вот когда он настал машина стала не актуальной в семье... Под капотом 2.3 турбированый мотор, 6-ти ступенчатый, самый обыкновенный гидротрансформарот, люк и кондер, кожа и мульти-руль, практически все для комфортных поездок как по городу так и на дальние расстояния. В машине удалось сохранить пробег в 196.000, но к сожалению для автомобиля - стоять, хуже всего.</p>
+        <ul>
+            <li>Пробег: 196.000</li>
+            <li>Люк, кондер, подогрев сидений</li>
+            <li>Круиз контроль</li>
+            <li>Электропакет</li>
+            <li>АКПП-6ст</li>
+            <li>Зимняя резина в комплекте</li>
+        </ul>
+        <h2>Какие требуются вложения?</h2>
+        <ul>
+            <li>Пересохшая прокладка поддона (не много капает масло)</li>
+            <li>Не большая корозия на заднем правом крыле</li>
+            <li>Замена масла АКПП (желательно)</li>
+        </ul>
+        <img src="asset/img/mazda.jpg" alt="Автомобиль">
+    </div>
+
+    <div class="gallery">
+        <img src="asset/img/one.jpg" alt="Фото автомобиля 1">
+        <img src="asset/img/maxda-rigth.jpg" alt="Фото автомобиля 2">
+        <img src="asset/img/mazda-3.jpg" alt="Фото автомобиля 3">
+        <img src="asset/img/light.jpg" alt="Фото автомобиля 4">
+        <img src="asset/img/rull.jpg" alt="Фото автомобиля 5">
+        <img src="asset/img/odo.jpg" alt="Фото автомобиля 6">
+    </div>
+
+    <div class="contact-form">
+        <h2>Свяжитесь с продавцом</h2>
+        <form>
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Телефон</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
